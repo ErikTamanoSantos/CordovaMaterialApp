@@ -28,7 +28,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
               -->
-              <meta http-equiv="Content-Security-Policy" content="default-src https://code.jquery.com https://fonts.gstatic.com 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+              <meta http-equiv="Content-Security-Policy" content="default-src https://api.spaceflightnewsapi.net https://code.jquery.com https://fonts.gstatic.com 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; media-src *; img-src * 'self' data: content:;">
               <meta name="format-detection" content="telephone=no">
               <meta name="msapplication-tap-highlight" content="no">
               <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -71,111 +71,52 @@
 
 
                   <ul id="tabs-swipe-demo" class="tabs">
-                    <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-                    <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
-                    <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+                    <li class="tab col s3"><a href="#div-tab-1">Test 1</a></li>
+                    <li id="tab2" class="tab col s3"><a class="active" href="#div-tab-2">Test 2</a></li>
+                    <li class="tab col s3"><a href="#div-tab-3">Test 3</a></li>
+                    <li class="tab col s3"><a href="#div-tab-4"><i class="material-icons ">photo_camera</i></a></li>
                   </ul>
                 </div>
-                <div id="test-swipe-1" class="col s12 blue tabs-content">Test 1</div>
-                <div id="test-swipe-2" class="col s12 red tabs-content">
-                  <div class="row">
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">science</i></h2>
-            <h5 class="center"></h5>
-
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">vaccines</i></h2>
-            <h5 class="center"></h5>
-
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">local_police</i></h2>
-            <h5 class="center"></h5>
-
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">engineering</i></h2>
-            <h5 class="center"></h5>
-
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">sports_soccer</i></h2>
-            <h5 class="center"></h5>
-
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">ac_unit</i></h2>
-            <h5 class="center"></h5>
-
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </div>
+                <div id="div-tab-1" class="col s12 brown lighten-5 tabs-content">
+                  <a id="loadArticlesButton" class="waves-effect waves-light btn center-align"><i class="material-icons left">cloud</i>button</a>
+                  
+                  <ul id="articleList" class="collection with-header">
+                    <li class="collection-header"><h4>Articles</h4></li>
+                  </ul>
+            
+                </div>
+                <div id="div-tab-2" class="col s12 brown lighten-5 tabs-content">
+                  <div class="card" id="articleCard">
+                  </div>
+                  </div>
+            
 
 
                 </div>
-                <div id="test-swipe-3" class="col s12 green tabs-content">Test 3</div>
+                <div id="div-tab-3" class="col s12 brown lighten-5 tabs-content">
+                  <div class="row">
+
+                  </div>
+                </div>
+                <div id="div-tab-4" class="col s12 brown lighten-5 tabs-content">
+                  <div class="row">
+                    <a id="cameraButton" class="waves-effect waves-light btn center-align"><i class="material-icons left">cloud</i>button</a>
+                  </div>
+                  <div class="row">
+                  <img id="image" style="width: 500px;">
+
+                  </div>
+                </div>
 
 
 
 
 
               <!--  Scripts-->
+              <script src="cordova.js"></script>
               <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
               <script src="js/materialize.js"></script>
-              <script src="js/init.js"></script>
+              <script src="js/index.js"></script>
 
             </body>
             </html>
